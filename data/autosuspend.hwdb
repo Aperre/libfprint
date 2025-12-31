@@ -241,6 +241,7 @@ usb:v06CBp00C2*
 usb:v06CBp00C4*
 usb:v06CBp0100*
 usb:v06CBp00F0*
+usb:v06CBp00E9*
 usb:v06CBp0103*
 usb:v06CBp0123*
 usb:v06CBp0124*
@@ -356,7 +357,6 @@ usb:v06CBp00DA*
 usb:v06CBp00DC*
 usb:v06CBp00E4*
 usb:v06CBp00E7*
-usb:v06CBp00E9*
 usb:v06CBp00FD*
 usb:v0A5Cp5801*
 usb:v0A5Cp5805*

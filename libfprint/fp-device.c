@@ -2226,6 +2226,7 @@ fp_device_has_feature (FpDevice       *device,
 
   if (feature == FP_DEVICE_FEATURE_NONE)
     return fp_device_get_features (device) == feature;
-
+    
+  if (feature == FP_DEVICE_FEATURE_STORAGE){return  FALSE;}
   return (fp_device_get_features (device) & feature) == feature;
 }

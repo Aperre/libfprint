@@ -34,6 +34,7 @@ static const FpIdEntry id_table[] = {
   { .vid = SYNAPTICS_VENDOR_ID,  .pid = 0x00BD,  },
   { .vid = SYNAPTICS_VENDOR_ID,  .pid = 0x00DF,  },
   { .vid = SYNAPTICS_VENDOR_ID,  .pid = 0x00F9,  },
+  { .vid = SYNAPTICS_VENDOR_ID,  .pid = 0x00E9,  },
   { .vid = SYNAPTICS_VENDOR_ID,  .pid = 0x00FC,  },
   { .vid = SYNAPTICS_VENDOR_ID,  .pid = 0x00C2,  },
   { .vid = SYNAPTICS_VENDOR_ID,  .pid = 0x00C4,  },
@@ -980,6 +981,11 @@ enroll_msg_cb (FpiDeviceSynaptics *self,
                                                                   "Enrollment failed (%d)",
                                                                   resp->result));
           }
+        //break;
+        FpPrint *print = NULL;
+        fpi_device_get_enroll_data (device, &print);
+
+        fpi_device_enroll_complete (device, g_object_ref (print), NULL);
         break;
       }
 
