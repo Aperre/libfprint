@@ -1,4 +1,4 @@
-# This fork of [libfprint](https://gitlab.freedesktop.org/libfprint/libfprint/) for the support of the fingerprint reader Synapse for the Elitebook x360 1040 G7 or (06cb:00e9)
+# This is a fork of [libfprint](https://gitlab.freedesktop.org/libfprint/libfprint/) that adds support for the fingerprint reader Synapse on the Elitebook x360 1040 G7 and G8 or (06cb:00e9)
 ⚠ This fork will not work with your other fingerprint readers and does break some features for other readers.
 ## Updates About official fprint
 The issue that i created got aknowledged. It is under issue [#614](https://gitlab.freedesktop.org/libfprint/libfprint/-/issues/614)
